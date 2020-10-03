@@ -1,5 +1,6 @@
-# Github Orientation
+# Github Orientation, Nanoenergy Lab
 Written by Eric Rong
+
 ## Introduction to Github and Git (including vocabulary)
 
 This is the introduction to Github for the Johns Hopkins Nanoenergy Lab. Github is a remote, cloud-based platform for the development and management of what is primarily code, but other files and data may also be stored here. All content is stored in a **repository**, which is essentially a folder which contains all the data and files in one project. Each repository may be public or private (for instance, this repository, [github.com/jhu-nanoenergy/documentation](https://www.github.com/jhu-nanoenergy/documentation) is public).
@@ -42,7 +43,7 @@ Next, select which repository you wish to clone, and choose a local path on your
 
 After cloning, you will see that the repository (documentation) is selected, and any changes to the contents therein will be reflected (it should be a blank list immediately after, as you have made no changes yet).
 
-TODO include picture of Github Desktop with no changed files
+![No local changes](/figures/github_desktop_no_changes.png)
 
 #### Changing Repositories
 
