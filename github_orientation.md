@@ -52,6 +52,6 @@ See that it shows the differences between the conflicting commit and your local 
 
 ![View of merge conflict deltas](/figures/github_desktop_merge_conflict.png)
 
-
+asdf
 
 To change the repository, select the **Current Repository** dropdown and select the other one. Only then can you pull/push.
