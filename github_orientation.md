@@ -7,7 +7,7 @@ In practice, you'll be making several commits as you code, each containing some 
 
 However, Git will not refresh the **local** copy of the remote repository that you **clone** to your computer when other people commit new changes to the remote repository. Therefore, you must manually **pull** changes from the remote repository to keep your version as up to date as possible.
 
-In essence, Git is like a backup system, which can give you Control over the different Versions of your code. 
+In essence, Git is like a backup system for incremental development of your code.
 
 
 ## Using Github
@@ -28,14 +28,18 @@ Next, select which repository you wish to clone, and choose a local path on your
 
 ![View of the clone popup on the Desktop app](/figures/github_desktop_clone2.png)
 
-After cloning, you will see that the repository is selected, and any changes to the contents therein will be reflected (it should be a blank list immediately after cloning, however). Once you create changes, they will reflect here - for instance, green text means you added lines since the last commit, yellow means that line was changed compared to the same line of the last commit, and red means that line was removed since the last commit. The same principles apply for the files, whose changes are represented by the colored squares next to the filenames.
+After cloning, you will see that the repository is selected, and any changes to the contents therein will be reflected (it should be a blank list immediately after cloning, however). Once you create changes, they will reflect here - for instance, green text means you added lines since the last commit, and red means that line was removed since the last commit. For the files, a green square represents a newly added file, a yellow square represents a file with changes since the last commit, and a red square represents a file which was removed.
 
-TODO: change this picture for one with red deltas, both inline and for files
+![View of the repository](/figures/github_desktop_deltas.png)
 
-![View of the repository](/figures/github_desktop_view.png)
-
-Also note the **Fetch origin** button in the top bar, which checks if the remote server has any changes that your local computer doesn't reflect. You should do this before you start making changes. If there are changes, it will show you the option to **Pull origin**, to pull the changes from the remote repository, with the number of new commits (in this case 1). 
+Also note the **Fetch origin** button in the top bar, which checks if the remote server has any changes that your local computer doesn't reflect. You should click this before you start making changes. If there are changes, it will show you the option to **Pull origin**, to pull the changes from the remote repository, alongside the number of new commits available (in this case 1).
 
 ![View of the Pull origin option](/figures/github_desktop_pull_origin.png)
+
+Sometimes, there may be issues when pulling from the remote repository, if other changes conflict with changes you made. For example, if the remote commit changed line 1, but you also changed line 1 locally without having committed it, you will run into a merge conflict. You will get a popup that instructs you to stash your local changes and conform to the remote repository.
+
+![View of the popup to stash your changes](/figures/github_desktop_stash.png)
+
+Try to avoid this by coordinating with collaborators on what you will each be working on, and in particular which lines you may be Stash your changes, 
 
 To change the repository, select the **Current Repository** dropdown and select the other one. Only then can you pull/push.
