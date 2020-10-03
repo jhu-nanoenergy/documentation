@@ -40,6 +40,6 @@ Sometimes, there may be issues when pulling from the remote repository, if other
 
 ![View of the popup to stash your changes](/figures/github_desktop_stash.png)
 
-Try to avoid this by coordinating with collaborators on what you will each be working on, and in particular which lines you may be Stash your changes, but
+Try to avoid this by coordinating with collaborators on what you will each be working on, and in particular which lines you may be Stash your changes, 
 
 To change the repository, select the **Current Repository** dropdown and select the other one. Only then can you pull/push.
