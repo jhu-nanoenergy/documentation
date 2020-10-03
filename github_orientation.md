@@ -56,7 +56,8 @@ You may also have issues when you push code with your changes, but someone else 
 
 ![View of merge conflict when pushing](/figures/github_desktop_merge_conflict_push.png)
 
-In this case, fetch the changes from the remote repository, 
+In this case, fetch the changes from the remote repository,
+
 
 
 To change the repository, select the **Current Repository** dropdown and select the other one. Only then can you pull/push.
