@@ -7,7 +7,7 @@ In practice, you'll be making several commits as you code, each containing some 
 
 However, Git will not refresh the **local** copy of the remote repository that you **clone** to your computer when other people commit new changes to the remote repository. Therefore, you must manually **pull** changes from the remote repository to keep your version as up to date as possible.
 
-In essence, Git is like a backup system, which can give you Control over the different Versions of your code.
+In essence, Git is like a backup system, which can give you Control over the different Versions of your code. 
 
 
 ## Using Github
