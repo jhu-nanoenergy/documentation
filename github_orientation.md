@@ -1,4 +1,4 @@
-# Github Orientation 
+# Github Orientation
 ## Introduction to Github and Git
 
 This is the introduction to Github for the Johns Hopkins Nanoenergy Lab. Github is a remote, cloud-based platform for the development and management of what is primarily code, but other files and data may also be stored here. All content is stored in a **repository**, which is essentially a folder which contains all the data and files in one project. Each repository may be public or private (for instance, this repository, [github.com/jhu-nanoenergy/documentation](https://www.github.com/jhu-nanoenergy/documentation) is public). Github is based on the **Git** Version Control System (VCS), which allows you to track incremental progress through a sequence of **commits**, each of which represents an update from the previous commit (whether you're adding lines, changing lines, or removing lines of code).
@@ -52,6 +52,11 @@ See that it shows the differences between the conflicting commit and your local 
 
 ![View of merge conflict deltas](/figures/github_desktop_merge_conflict.png)
 
+You may also have issues when you push code with your changes, but someone else had committed code to the remote repository which you did not pull.
+
+![View of merge conflict when pushing](/figures/github_desktop_merge_conflict_push.png)
+
+In this case, fetch the changes from the remote repository, 
 
 
 To change the repository, select the **Current Repository** dropdown and select the other one. Only then can you pull/push.
