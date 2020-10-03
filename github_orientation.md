@@ -18,46 +18,50 @@ The Git VCS was originally designed as a command line tool to use in the termina
 
 First, decide whether you wish to use the group account, [github.com/jhu-nanoenergy](https://www.github.com/jhu-nanoenergy), or to [create your own](https://www.github.com). It is generally preferable to use your own Github account so you can keep track of who has done what for easy accountability, and to use Github easily with your non-lab-related projects (it is a pain to sign off and on again). Just make sure to add your own account as a collaborator on the repositories you wish to work on and contribute to. To do so, click on the repository on the Github website, select the **Settings** tab as follows, select **Manage access** in the menu on the left, and select **Invite a collaborator** to add your personal account. Don't forget to accept the invitation in your email.
 
-![View of the repository jhu-nanoenergy/documentation on github.com](/figures/repo_view.png)
+![The repository jhu-nanoenergy/documentation on github.com](/figures/repo_view.png)
 
 Next, download the [Github Desktop app](https://desktop.github.com) and sign into your account. You will see something like the following, except you likely will not have repositories showing on the left-hand tab. To download a copy of an existing remote repository to your local computer, select **Clone Repository**.
 
-![View of the Github Desktop app](/figures/github_desktop_clone.png)
+![The Github Desktop app](/figures/github_desktop_clone.png)
 
 Next, select which repository you wish to clone, and choose a local path on your computer where you want the repository to be located.
 
-![View of the clone popup on the Desktop app](/figures/github_desktop_clone2.png)
+![The clone popup on the Desktop app](/figures/github_desktop_clone2.png)
 
 After cloning, you will see that the repository is selected, and any changes to the contents therein will be reflected (it should be a blank list immediately after cloning, however). Once you create changes, they will reflect here - for instance, green text means you added lines since the last commit, and red means that line was removed since the last commit. For the files, a green square represents a newly added file, a yellow square represents a file with changes since the last commit, and a red square represents a file which was removed.
 
-![View of the repository](/figures/github_desktop_deltas.png)
+![The repository](/figures/github_desktop_deltas.png)
 
 Also note the **Fetch origin** button in the top bar, which checks if the remote server has any changes that your local computer doesn't reflect. You should click this before you start making changes. If there are changes, it will show you the option to **Pull origin**, to pull the changes from the remote repository, alongside the number of new commits available (in this case 1).
 
-![View of the Pull origin option](/figures/github_desktop_pull_origin.png)
+![The Pull origin option](/figures/github_desktop_pull_origin.png)
 
 Sometimes, there may be issues when pulling from the remote repository, if other changes conflict with changes you made. For example, if the remote commit changed line 1, but you also changed line 1 locally without having committed it, you will run into a merge conflict. You will get a popup that instructs you to stash your local changes and conform to the remote repository.
 
-![View of the popup to stash your changes](/figures/github_desktop_stash.png)
+![The popup to stash your changes](/figures/github_desktop_stash.png)
 
 Try to avoid this by coordinating with collaborators on what you will each be working on, and in particular which lines you might each be working on. But if it happens, you have one of two options: either delete the file(s) which you changed locally, or if you wish to keep your changes, you can stash your local changes, and proceed to view those stashed changes.
 
-![View of the popup to view stashed changes](/figures/github_desktop_stashed.png)
+![The popup to view stashed changes](/figures/github_desktop_stashed.png)
 
 Restore your stashed changes to your local repository.
 
-![View of the restore stash screen](/figures/github_desktop_restore_stash.png)
+![The restore stash screen](/figures/github_desktop_restore_stash.png)
 
-See that it shows the differences between the conflicting commit and your local work. From this, decide which version to keep, remove the arrows, commit your new changes, and push the commit to the remote repository.
+See that it shows the differences between the conflicting commit and your local work. From this, decide which version to keep, remove the arrows, make sure the line(s) read exactly how you want them to, commit these changes, and push the commit with the conflict-free file to the remote repository.
 
-![View of merge conflict deltas](/figures/github_desktop_merge_conflict.png)
+![Merge conflict deltas](/figures/github_desktop_merge_conflict.png)
 
-You may also have issues when you push code with your changes, but someone else had committed code to the remote repository which you did not pull.
+You may also have issues when you push code with your changes, but someone else had committed code to the remote repository which you did not pull. In this case, fetch the changes from the remote repository.
 
-![View of merge conflict when pushing](/figures/github_desktop_merge_conflict_push.png)
+![Merge conflict when pushing](/figures/github_desktop_merge_conflict_push.png)
 
-In this case, fetch the changes from the remote repository,
+You may see a popup containing files where there are conflicting lines of code.
 
+![Merge conflict to resolve](/figures/github_desktop_merge_conflict_to_resolve.png)
 
+Open the conflicting file in your text editor of choice (mine is [Atom](https://atom.io)). You will see some arrows with comparisons of what is on the line locally, and what the remote commit (with commit number [4c35e8e34a504893a420a73ffaa075cdc23892ec](https://github.com/jhu-nanoenergy/documentation/commit/4c35e8e34a504893a420a73ffaa075cdc23892ec)) has, both of which are different. Reconcile these differences (by removing the arrows and deciding what the correct line(s) should be), and you can commit a conflict-free file.
+
+![Merge conflict in text editor](/figures/github_desktop_merge_conflict_atom.png)
 
 To change the repository, select the **Current Repository** dropdown and select the other one. Only then can you pull/push.
